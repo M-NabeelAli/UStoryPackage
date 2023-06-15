@@ -19,6 +19,7 @@ extension PhotoEditorViewController: EditorToolViewDelegate {
             hiddenMosaicToolView()
             imageView.drawEnabled = !imageView.drawEnabled
             toolView.stretchMask = imageView.drawEnabled
+            
             toolView.layoutSubviews()
             if imageView.drawEnabled {
                 imageView.stickerEnabled = false
@@ -37,6 +38,7 @@ extension PhotoEditorViewController: EditorToolViewDelegate {
             currentToolOption = model
             hidenTopView()
             showChartletView()
+           
         case .text:
             deselectedDraw()
             imageView.deselectedSticker()
@@ -86,6 +88,7 @@ extension PhotoEditorViewController: EditorToolViewDelegate {
         imageView.drawEnabled = false
         imageView.mosaicEnabled = false
         imageView.stickerEnabled = false
+        bottomBGV.isHidden = true
     }
     
     func presentText() {

@@ -150,7 +150,7 @@ extension PhotoEditorViewController: UICollectionViewDelegate {
 //            #endif
             pickerController?.previewUpdateCurrentlyDisplayedAsset(photoAsset: photoAsset, index: currentIndex)
         }
-        self.currentPreviewIndex = currentIndex
+        //self.currentPreviewIndex = currentIndex
     }
     
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

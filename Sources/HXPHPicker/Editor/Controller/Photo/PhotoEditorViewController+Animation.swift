@@ -103,6 +103,7 @@ extension PhotoEditorViewController {
 
     }
     func showTopView() {
+        bottomBGV.isHidden = false
         topViewIsHidden = false
         editorToolView.isHidden = false
         topView.isHidden = false

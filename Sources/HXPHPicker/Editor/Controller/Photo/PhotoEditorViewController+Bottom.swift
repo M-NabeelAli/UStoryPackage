@@ -290,17 +290,17 @@ extension PhotoEditorViewController: PhotoPickerBottomViewDelegate {
         if item == currentPreviewIndex {
             return
         }
-        getCell(for: currentPreviewIndex)?.cancelRequest()
-        changeCurrentAsset(photoAsset)
-        collectionView.scrollToItem(
-            at: IndexPath(item: item, section: 0),
-            at: .centeredHorizontally,
-            animated: false
-        )
-        setupRequestPreviewTimer()
+        //getCell(for: currentPreviewIndex)?.cancelRequest()
+        changeCurrentAsset(item, photoAsset)
+//        collectionView.scrollToItem(
+//            at: IndexPath(item: item, section: 0),
+//            at: .centeredHorizontally,
+//            animated: false
+//        )
+//        setupRequestPreviewTimer()
     }
     
-    func changeCurrentAsset(_ photoAsset: PhotoAsset){
+    func changeCurrentAsset(_ item: Int,_ photoAsset: PhotoAsset){
         self.photoAsset = photoAsset
         PhotoManager.shared.appearanceStyle = config.appearanceStyle
         PhotoManager.shared.createLanguageBundle(languageType: config.languageType)
@@ -311,6 +311,11 @@ extension PhotoEditorViewController: PhotoPickerBottomViewDelegate {
         //self.editResult = editResult
         self.photoAsset = photoAsset
         self.configPreview = PreviewViewConfiguration()
+//        requestLocalAsset()
+        if let img = photoAsset.originalImage{
+            imageView.setImage(img)
+        }
+        currentPreviewIndex = item
         
     }
 }
