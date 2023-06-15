@@ -17,7 +17,7 @@ public struct PhotoListConfiguration {
     /// - Default: ASC
     /// - ASC:  升序排列，自动滚动到底部
     /// - DESC: 倒序排列，自动滚动到顶部
-    public var sort: Sort = .asc
+    public var sort: Sort = .desc
     
     /// 背景颜色
     public var backgroundColor: UIColor = .white

@@ -254,6 +254,7 @@ open class PhotoEditorViewController: BaseViewController {
         self.networkImageURL = networkImageURL
         self.config = config
         self.editResult = editResult
+        self.configPreview = PreviewViewConfiguration()
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = config.modalPresentationStyle
     }

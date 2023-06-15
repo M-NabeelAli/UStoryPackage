@@ -37,10 +37,10 @@ open class PickerConfiguration: BaseConfiguration {
     public var creationDate: Bool = false
     
     /// 资源列表照片Cell点击动作
-    public var photoSelectionTapAction: SelectionTapAction = .preview
+    public var photoSelectionTapAction: SelectionTapAction = .quickSelect
     
     /// 资源列表视频Cell点击动作
-    public var videoSelectionTapAction: SelectionTapAction = .preview
+    public var videoSelectionTapAction: SelectionTapAction = .quickSelect
     
     /// 最多可以选择的照片数，如果为0则不限制
     public var maximumSelectedPhotoCount: Int = 0

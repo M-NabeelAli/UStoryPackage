@@ -297,7 +297,7 @@ extension PhotoTools {
         if isMoment {
             config.maximumSelectedCount = 9
             config.maximumSelectedVideoCount = 1
-            config.videoSelectionTapAction = .openEditor
+            config.videoSelectionTapAction = .quickSelect
             config.allowSelectedTogether = false
             config.maximumSelectedVideoDuration = 60
         }else {
