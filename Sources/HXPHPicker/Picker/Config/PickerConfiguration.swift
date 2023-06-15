@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class PickerConfiguration: BaseConfiguration {
+public class PickerConfiguration: BaseConfiguration {
     
     /// 资源可选项，控制获取系统相册资源的类型
     /// .livePhoto .gifPhoto 是photo的子项
