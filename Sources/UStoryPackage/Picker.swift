@@ -15,4 +15,7 @@ public class Picker{
     private init() {
         
     }
+    func helloWorld(){
+        print("hello world")
+    }
 }
