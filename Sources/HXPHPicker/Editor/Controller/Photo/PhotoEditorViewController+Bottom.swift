@@ -264,20 +264,6 @@ extension PhotoEditorViewController: PhotoPickerBottomViewDelegate {
     }
     
     public func setOriginal(_ isOriginal: Bool) {
-//        bottomView.boxControl.isSelected =  isOriginal
-//        if !isOriginal {
-//            // 取消
-//            bottomView.cancelRequestAssetFileSize()
-//        }else {
-//            // 选中
-//            bottomView.requestAssetBytes()
-//        }
-//        pickerController?.isOriginal = isOriginal
-//        pickerController?.originalButtonCallback()
-//        delegate?.previewViewController(
-//            self,
-//            didOriginalButton: isOriginal
-//        )
     }
     
     func scrollToPhotoAsset(_ photoAsset: PhotoAsset) {
@@ -292,12 +278,6 @@ extension PhotoEditorViewController: PhotoPickerBottomViewDelegate {
         }
         //getCell(for: currentPreviewIndex)?.cancelRequest()
         changeCurrentAsset(item, photoAsset)
-//        collectionView.scrollToItem(
-//            at: IndexPath(item: item, section: 0),
-//            at: .centeredHorizontally,
-//            animated: false
-//        )
-//        setupRequestPreviewTimer()
     }
     
     func changeCurrentAsset(_ item: Int,_ photoAsset: PhotoAsset){
