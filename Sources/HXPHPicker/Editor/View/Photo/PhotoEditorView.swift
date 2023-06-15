@@ -15,7 +15,6 @@ protocol PhotoEditorViewDelegate: AnyObject {
     func editorView(didAppear editorView: PhotoEditorView)
     func editorView(willDisappearCrop editorView: PhotoEditorView)
     func editorView(didDisappearCrop editorView: PhotoEditorView)
-    
     func editorView(drawViewBeganDraw editorView: PhotoEditorView)
     func editorView(drawViewEndDraw editorView: PhotoEditorView)
     func editorView(_ editorView: PhotoEditorView, updateStickerText item: EditorStickerItem)
